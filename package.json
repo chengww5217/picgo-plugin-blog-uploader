@@ -1,0 +1,41 @@
+{
+  "name": "picgo-plugin-blog-uploader",
+  "version": "0.0.2",
+  "description": "博客图床; blog-uploader; 主要支持了掘金、简书、csdn 等国内几大博客的图片上传",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/chengww5217/picgo-plugin-blog-uploader",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p .",
+    "dev": "tsc -w -p .",
+    "patch": "npm version patch && git push origin master && git push origin --tags",
+    "minor": "npm version minor && git push origin master && git push origin --tags",
+    "major": "npm version major && git push origin master && git push origin --tags"
+  },
+  "keywords": [
+    "picgo-plugin",
+    "picgo-gui-plugin",
+    "picgo-plugin",
+    "简书图床",
+    "掘金图床",
+    "CSDN 图床"
+  ],
+  "author": "chengww",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^10.10.1",
+    "picgo": "^1.2.0",
+    "tslint": "^5.10.0",
+    "tslint-config-standard": "^7.1.0",
+    "typescript": "^3.0.3",
+    "eslint": "^5.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}
