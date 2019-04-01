@@ -6,7 +6,7 @@
 
 English | [简体中文](./README-zh_CN.md)
 
-A plugin for [PicGo](https://github.com/Molunerfinn/PicGo) with the addition of the image hosting of [JueJin](https://juejin.im), [JianShu](https://www.jianshu.com/) and [CSDN](https://blog.csdn.net/).
+A plugin for [PicGo](https://github.com/Molunerfinn/PicGo) with the addition of the image hosting of [JueJin](https://juejin.im) and [JianShu](https://www.jianshu.com/).
 
 ### Installation
 
@@ -28,7 +28,8 @@ A plugin for [PicGo](https://github.com/Molunerfinn/PicGo) with the addition of 
 ### Cookie
 
 JueJin don't need the cookie, other blogs need.
-Moreover, the images uploaded to CSDN blog have cross-domain restrictions, which prohibit non-CSDN websites from accessing their images.
+~~Moreover, the images uploaded to CSDN blog have cross-domain restrictions, which prohibit non-CSDN websites from accessing their images.~~
+> The support of CSDN has been removed.
 
 How to get the cookie:
 

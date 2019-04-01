@@ -1,10 +1,8 @@
 import picgo from 'picgo'
 import { PluginConfig } from 'picgo/dist/utils/interfaces'
-import mime from 'mime-types'
 const JIANSHU_TOKEN_GET_URL = 'https://www.jianshu.com/upload_images/token.json'
 const JIANSHU_UPLOAD_URL = 'https://upload.qiniup.com/'
 const JUEJIN_UPLOAD_URL = 'https://cdn-ms.juejin.im/v1/upload?bucket=gold-user-assets'
-const CSDN_UPLOAD_URL = 'https://mp.csdn.net/UploadImage?shuiyin=1'
 
 const getTokenOptions = (fileName: string, cookie: string): any => {
   return {
@@ -73,21 +71,6 @@ const handle = async (ctx: picgo): Promise<picgo> => {
           }
         }
         break
-      case 'CSDN':
-        url = CSDN_UPLOAD_URL
-        formData = {
-          file: {
-            value: image,
-            options: {
-              filename: imgList[i].fileName,
-              contentType: mime.lookup(imgList[i].fileName)
-            }
-          }
-        }
-        headers = {
-          cookie: blogOptions.cookie
-        }
-        break
     }
     const options = postOptions(url, headers, formData)
     const uploadRes = await ctx.Request.request(options)
@@ -111,21 +94,6 @@ const handle = async (ctx: picgo): Promise<picgo> => {
             imgList[i].imgUrl = uploadBody.url
           }
           break
-        case 'CSDN':
-          if (!uploadBody.url && !uploadBody.content) {
-            apiUpdated(ctx, blogOptions.uploadTo)
-          } else {
-            // Remove the oss process, eg: water mark
-            let imageUrl
-            if (uploadBody.url) imageUrl = uploadBody.url
-            else imageUrl = uploadBody.content
-            const index = imageUrl.indexOf('?x-oss-process=')
-            if (index > -1) {
-              imageUrl = imageUrl.substring(0, index)
-            }
-            imgList[i].imgUrl = imageUrl
-          }
-          break
       }
     }
 
@@ -143,7 +111,7 @@ const config = (ctx: picgo): PluginConfig[] => {
       name: 'uploadTo',
       type: 'list',
       alias: '上传到',
-      choices: ['掘金','简书', 'CSDN'],
+      choices: ['掘金','简书'],
       default: userConfig.uploadTo || '掘金',
       required: false
     },

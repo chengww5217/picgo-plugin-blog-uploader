@@ -1,7 +1,7 @@
 {
   "name": "picgo-plugin-blog-uploader",
-  "version": "0.0.2",
-  "description": "博客图床; blog-uploader; 主要支持了掘金、简书、csdn 等国内几大博客的图片上传",
+  "version": "0.0.6",
+  "description": "博客图床; blog-uploader; 主要支持了掘金、简书等国内几大博客的图片上传",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
@@ -20,8 +20,7 @@
     "picgo-gui-plugin",
     "picgo-plugin",
     "简书图床",
-    "掘金图床",
-    "CSDN 图床"
+    "掘金图床"
   ],
   "author": "chengww",
   "license": "MIT",

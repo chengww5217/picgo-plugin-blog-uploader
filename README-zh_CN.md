@@ -6,7 +6,7 @@
 
 [English](./README.md) | 简体中文
 
-为 [PicGo](https://github.com/Molunerfinn/PicGo) 开发的一款插件，新增了[掘金](https://juejin.im), [简书](https://www.jianshu.com/) 和 [CSDN](https://blog.csdn.net/) 图床。
+为 [PicGo](https://github.com/Molunerfinn/PicGo) 开发的一款插件，新增了[掘金](https://juejin.im)和[简书](https://www.jianshu.com/)图床。
 
 ### 安装
 
@@ -25,7 +25,9 @@
 
 ### Cookie
 
-掘金不需要 cookie，其他博客需要 cookie。且 CSDN 博客上传后的图片有跨域限制，其禁止非 CSDN 网址访问其图片。
+掘金不需要 cookie，其他博客需要 cookie。
+~~且 CSDN 博客上传后的图片有跨域限制，其禁止非 CSDN 网址访问其图片。~~
+> 已经移除对 CSDN 图床的支持。
 
 Cookie 的获取：
 
