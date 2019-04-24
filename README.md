@@ -6,7 +6,7 @@
 
 English | [简体中文](./README-zh_CN.md)
 
-A plugin for [PicGo](https://github.com/Molunerfinn/PicGo) with the addition of the image hosting of [JueJin](https://juejin.im) and [JianShu](https://www.jianshu.com/).
+A plugin for [PicGo](https://github.com/Molunerfinn/PicGo) with the addition of the image hosting of [JueJin](https://juejin.im), [JianShu](https://www.jianshu.com/) and [YuQue](https://www.yuque.com).
 
 ### Installation
 

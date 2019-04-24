@@ -6,7 +6,7 @@
 
 [English](./README.md) | 简体中文
 
-为 [PicGo](https://github.com/Molunerfinn/PicGo) 开发的一款插件，新增了[掘金](https://juejin.im)和[简书](https://www.jianshu.com/)图床。
+为 [PicGo](https://github.com/Molunerfinn/PicGo) 开发的一款插件，新增了[掘金](https://juejin.im)、[简书](https://www.jianshu.com/)和[语雀](https://www.yuque.com)图床。
 
 ### 安装
 
