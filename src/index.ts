@@ -97,7 +97,8 @@ const handle = async (ctx: picgo): Promise<picgo> => {
             _input_charset: 'utf-8'
           }
           headers = {
-            'cookie': cookie
+            'cookie': cookie,
+            'referer': 'https://www.yuque.com'
           }
           break
       }

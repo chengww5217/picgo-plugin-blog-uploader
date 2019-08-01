@@ -1,6 +1,6 @@
 {
   "name": "picgo-plugin-blog-uploader",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "博客图床; blog-uploader; 主要支持了掘金、简书、语雀等国内几大博客的图片上传",
   "main": "dist/index.js",
   "publishConfig": {
